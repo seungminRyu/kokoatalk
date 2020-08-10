@@ -1,0 +1,67 @@
+/*
+nav {
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+}
+*/
+
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(126, 126, 126, 0.3);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  position: relative;
+  color: #2e363e;
+}
+
+.nav__notification {
+  background-color: tomato;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  position: absolute;
+  left: 24px;
+  bottom: 20px;
+}
+
+.nav__notification-dot {
+  background-color: tomato;
+  display: flex;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  position: absolute;
+  left: 32px;
+}
+
+/* 네비게이션 바 아이콘 크기 */
+.nav svg {
+  width: 32px;
+  height: 32px;
+}

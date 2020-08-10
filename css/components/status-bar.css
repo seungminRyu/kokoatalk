@@ -1,15 +1,16 @@
 .status-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
-  padding: 5px 3px;
+  padding: 5px 10px;
+  background-color: white;
 }
 
 .status-bar__column {
   width: 33%;
-}
-
-.status-bar__column:first-child span {
-  margin-right: 5px;
 }
 
 .status-bar__column:nth-child(2) {
@@ -27,5 +28,4 @@
   height: 15px;
   margin-top: 2px;
   margin-left: 5px;
-  margin-right: 2px;
 }
