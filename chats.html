@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>friends - kakao clone</title>
+    <title>chats - kakao clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -22,92 +22,48 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">친구</h1>
+      <h1 class="screen-header__title">채팅</h1>
       <div class="screen-header__icons">
         <span><img src="src/ic_find.svg" alt="" /></span>
+        <span><img src="src/ic_add-chat.svg" alt="" /></span>
         <span><img src="src/ic_music.svg" alt="" /></span>
         <span><img src="src/ic_setting.svg" alt="" /></span>
       </div>
     </header>
 
-    <a id="friends-display-link">
-      <img src="src/ic_information.svg" alt="" />
-      Friends' Names Display
-      <img src="src/ic_chevron.svg" alt="" />
-    </a>
-
-    <main class="friends-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="images/profile.jpg"
-            class="user-component__avatar user-component__avatar--xl"
-            alt=""
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">
-              승민류
-            </h4>
-            <!-- <h6 class="user-component__subtitle">this text is subtitle</h6> !-->
-          </div>
-        </div>
-        <div class="user-component__column"></div>
-      </div>
-
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-chevron-up"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#2c3e50"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" />
-            <polyline points="6 15 12 9 18 15" />
-          </svg>
-        </div>
+    <main class="main-screen">
+      <a href="chat.html">
         <div class="user-component">
           <div class="user-component__column">
             <img
               src="images/profile.jpg"
-              class="user-component__avatar user-component__avatar--sm"
+              class="user-component__avatar user-component__avatar"
               alt=""
             />
             <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Channel
-              </h4>
-              <!-- <h6 class="user-component__subtitle">this text is subtitle</h6> !-->
+              <h4 class="user-component__title">승민류</h4>
+              <h6 class="user-component__subtitle">this text is subtitle</h6>
             </div>
           </div>
           <div class="user-component__column">
-            <div class="user-component__channel">
-              <span>2</span>
-              <img src="src/ic_chevron.svg" alt="" />
-            </div>
+            <span class="user-component__time">21:22</span>
+            <div class="badge">1</div>
           </div>
         </div>
-      </div>
+      </a>
     </main>
 
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html">
-            <img src="src/ic_friends_on.svg" alt="" />
+            <img src="src/ic_friends.svg" alt="" />
           </a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
             <span class="nav__notification badge">1</span>
-            <img src="src/ic_chats.svg" alt="" />
+            <img src="src/ic_chats_on.svg" alt="" />
           </a>
         </li>
         <li class="nav__btn">

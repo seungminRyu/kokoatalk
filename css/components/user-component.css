@@ -1,5 +1,5 @@
 .user-component {
-  display: flex;
+  justify-content: space-between;
 }
 
 .user-component,
@@ -8,12 +8,11 @@
   align-items: center;
 }
 
-.user-component__avartar {
+.user-component__avatar {
   width: 70px;
   height: 70px;
   border-radius: 30px;
   margin-right: 20px;
-  margin-left: var(--horizontal-space);
 }
 
 .user-component__title {
@@ -24,10 +23,51 @@
 .user-component__subtitle {
   margin-top: 8px;
   font-size: 17px;
-  color: rgba(0, 0, 0, 50%);
+  color: var(--sub-gray);
+  display: flex;
+  align-items: center;
 }
 
-.user-component__avartar--xl {
+.user-component__subtitle img {
+  margin-left: 2px;
+  margin-top: 2px;
+}
+
+.user-component__avatar--xl {
   width: 80px;
   height: 80px;
+}
+
+.user-component__avatar--sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+
+.user-component__title--not-bold {
+  font-weight: 400;
+}
+
+.user-component__channel {
+  display: flex;
+  align-items: center;
+  color: var(--sub-gray);
+}
+
+.user-component__channel img {
+  padding-top: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+.user-component__column:last-child {
+  color: var(--sub-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.user-component__time {
+  display: block;
+  margin-bottom: 10px;
 }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>chat - kakao clone</title>
+  </head>
+
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <img src="src/ic_cellular.svg" class="icon icon__cellular" />
+        <span>KT</span>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <img src="src/ic_battery.svg" class="icon icon__battery" />
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html"><img src="src/ic_back.svg" alt="" /></a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">안나</h1>
+      </div>
+      <div class="alt-header__column">
+        <img src="src/ic_find.svg" alt="" />
+        <img src="src/ic_menu.svg" alt="" />
+      </div>
+    </header>
+
+    <main class="main-screen main-chat">
+      <div class="chat__time-stamp">8월 28일 금요일</div>
+      <div class="message-row">
+        <img src="images/profile__anna.jpg" alt="" />
+        <div class="meassge-row__content">
+          <span class="message__auther">안나</span>
+          <div class="message__info">
+            <span class="message__bubble">안녕 :)</span>
+            <span class="message__time">11:23</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row--own">
+        <div class="meassge-row__content">
+          <div class="message__info">
+            <span class="message__bubble">안녕 :)</span>
+            <span class="message__time">11:23</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <img src="src/ic_add.svg" alt="" />
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="메시지 입력" />
+        <img src="src/ic_emoticon.svg" alt="" />
+        <button>
+          <img src="src/ic_send.svg" alt="" />
+        </button>
+      </div>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/599fc76bbd.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

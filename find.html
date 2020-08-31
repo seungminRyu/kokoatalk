@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>find - kakao clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <img src="src/ic_cellular.svg" class="icon icon__cellular" />
+        <span>KT</span>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <img src="src/ic_battery.svg" class="icon icon__battery" />
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">친구찾기</h1>
+      <div class="screen-header__icons">
+        <span><img src="src/ic_find.svg" alt="" /></span>
+        <span class="screen-header__icons-setting">
+          <img src="src/ic_setting.svg" alt="" />
+          <span class="screen-header-dot"></span>
+        </span>
+      </div>
+    </header>
+
+    <main class="main-screen">
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <img src="src/ic_QRcode.svg" alt="" /><span>QR 코드</span>
+        </div>
+        <div class="icon-row__icon">
+          <img src="src/ic_contact.svg" alt="" /><span
+            >연락처로<br />추가하기</span
+          >
+        </div>
+        <div class="icon-row__icon">
+          <img src="src/ic_id.svg" alt="" /><span>아이디로 <br />추가하기</span>
+        </div>
+        <div class="icon-row__icon">
+          <img src="src/ic__mail.svg" alt="" /><span>초대하기</span>
+        </div>
+      </div>
+      <!--
+      <div class="menu">
+        <div class="column">
+          <span><img src="src/ic_find_on.svg" alt="" /></span>
+          <p>dasfjkl</p>
+        </div>
+        <div class="column">
+          <span><img src="src/ic_find_on.svg" alt="" /></span>
+          <p>dasfjkl</p>
+        </div>
+        <div class="column">
+          <span><img src="src/ic_find_on.svg" alt="" /></span>
+          <p>dasfjkl</p>
+        </div>
+        <div class="column">
+          <span><img src="src/ic_find_on.svg" alt="" /></span>
+          <p>dasfjkl</p>
+        </div>
+      </div>
+      -->
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">추천친구</h6>
+        <span>추천친구가 없습니다.</span>
+      </div>
+
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4 class="open-chat__title">오픈채팅</h4>
+          <div class="open-chat__link">
+            <span>오픈채팅 홈으로 가기</span>
+            <img src="src/ic_chevron.svg" alt="" />
+          </div>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#Coldplay</h5>
+            <h6 class="open-post__hashtags">#Coldplay#livadavida#everglow</h6>
+            <div class="open-post__members">
+              <img src="images/profile.jpg" alt="" />
+              <span class="open-post__member-count">803명</span>
+              <div class="divider"></div>
+              <span class="open-post__members-status">활성화</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__profile-img">
+              <img src="images/team-image.jpg" alt="" />
+            </div>
+            <div class="open-post__heart-count">
+              <img src="src/ic_heart.svg" alt="" />
+              <span>328</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <img src="src/ic_friends.svg" alt="" />
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <img src="src/ic_chats.svg" alt="" />
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <img src="src/ic_find_on.svg" alt="" />
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__notification-dot"></span>
+            <img src="src/ic_more.svg" alt="" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/599fc76bbd.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
