@@ -33,7 +33,7 @@
   color: white;
   font-size: 14px;
   font-weight: 300;
-  padding: 7px 15px;
+  padding: 9px 15px;
   margin-bottom: 25px;
 }
 
@@ -61,9 +61,9 @@
   background-color: white;
   font-size: 18px;
   color: #2b2b2b;
-  border-radius: 15px;
+  border-radius: 13px;
   border-top-left-radius: 0;
-  padding: 13px;
+  padding: 11px 13px;
 }
 
 .message__info {
@@ -105,48 +105,51 @@
 }
 
 .reply .reply__column:first-child {
-  width: 10%;
+  width: 8%;
 }
 
 .reply .reply__column:last-child {
-  width: 90%;
+  width: 92%;
   position: relative;
 }
 
 .reply input {
-  height: 30px;
+  height: 38px;
   width: 100%;
   border: var(--main-border);
   border-radius: 20px;
+  box-sizing: border-box;
+  padding: 0px 16px;
 }
 
 .reply__column:last-child > img,
 .reply__column:last-child > button {
   position: absolute;
-  right: -3px;
-  top: 3px;
 }
 
 .reply__column:last-child > img {
-  width: 28px;
-  height: 28px;
-  right: 30px;
-  top: 3px;
+  right: 42px;
+  top: 5px;
 }
 
 .reply__column:last-child > button {
-  /*background-color: var(--orange);*/
+  display: flex;
+  background-color: var(--orange);
   border: none;
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
+  right: 4px;
+  top: 3px;
   border-radius: 50%;
-  padding-right: 4px;
 }
 
-.reply__column:last-child > i {
-  background: url('/src/ic_send.svg');
-  display: inline-block;
-  height: 17px;
-  width: 17px;
+.reply__column img {
+  opacity: 0.5;
+}
+
+.reply__column:last-child > button > img {
   position: relative;
+  opacity: 1;
+  right: 1px;
+  top: 6px;
 }
