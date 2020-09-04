@@ -20,6 +20,17 @@
   margin-left: 10px;
 }
 
+@keyframes fadeIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .main-chat {
   margin-top: 100px;
   display: flex;
@@ -35,12 +46,26 @@
   font-weight: 300;
   padding: 9px 15px;
   margin-bottom: 25px;
+  animation: fadeIn 0.8s linear;
+}
+
+@keyframes fadeIn-left {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
 }
 
 .message-row {
   width: 100%;
   display: flex;
   margin-bottom: 25px;
+  will-change: transform;
+  animation: fadeIn-left 0.8s linear;
 }
 
 .message-row img {
@@ -77,8 +102,21 @@
   margin: 0 5px;
 }
 
+@keyframes fadeIn-right {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .message-row--own {
   justify-content: flex-end;
+  will-change: transform;
+  animation: fadeIn-right 0.8s linear;
 }
 
 .message-row--own .message__bubble {
@@ -145,6 +183,12 @@
 
 .reply__column img {
   opacity: 0.5;
+  cursor: pointer;
+}
+
+.reply__column:first-child img {
+  height: 30px;
+  width: 30px;
 }
 
 .reply__column:last-child > button > img {
