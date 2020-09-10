@@ -140,6 +140,7 @@
   padding: 5px 25px;
   align-items: center;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
@@ -158,6 +159,7 @@
   border-radius: 20px;
   box-sizing: border-box;
   padding: 0px 16px;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply__column:last-child > img,
@@ -196,4 +198,30 @@
   opacity: 1;
   right: 1px;
   top: 6px;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .reply__column:last-child img,
+.reply:focus-within .reply__column:last-child button {
+  animation: fade-out 0.2s ease-in-out forwards;
+}
+
+.reply input:focus {
+  width: 95vw;
+  transform: translateX(-10.5%) translateY(-100px);
+  box-shadow: 0 3px 8px 3px rgba(0, 0, 0, 10%);
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
 }
