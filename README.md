@@ -1,1 +1,1 @@
-# Kakao Clone 2020 Update
+# kokoa talk 2020
